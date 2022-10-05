@@ -316,7 +316,7 @@ extern pfnSQLGetDiagField       pSQLGetDiagField;
 extern pfnSQLFreeHandle         pSQLFreeHandle;
 extern pfnSQLFetchScroll        pSQLFetchScroll;
 extern pfnSQLFetchScroll        pSQLFetchScroll;
-extern pfnSQLColAttribute       pSQLColAttribute; 
+extern pfnSQLColAttribute       pSQLColAttribute;
 extern pfnSQLSetConnectAttr     pSQLSetConnectAttr;
 extern pfnSQLDriverConnect      pSQLDriverConnect;
 extern pfnSQLAllocHandle        pSQLAllocHandle;
@@ -379,5 +379,6 @@ BOOL DynLoadODBC( char* odbcModuleName );
 #define SQLBindParameter pSQLBindParameter
 #define SQLPrimaryKeys pSQLPrimaryKeys
 #define SQLSetEnvAttr pSQLSetEnvAttr
+#define SQLCancel pSQLCancel
 #endif
 #endif // _SRC_DYNODBC_H_
